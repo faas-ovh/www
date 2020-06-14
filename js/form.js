@@ -5,13 +5,7 @@
  * @constructor
  */
 function AddMessage(text) {
-
-    var message = new Message({
-        'class': 'messages',
-        'id': 'messages',
-        'element': {},
-        'message': ''
-    });
+    var message = new Message('#messages');
     message.add(text);
 }
 

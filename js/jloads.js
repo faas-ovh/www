@@ -31,10 +31,10 @@ script.onload = function () {
         return window.location.hostname !== 'localhost';
     })
 
-    media.target("#faas-form").html([
+    media.target("#forms").html([
         "html/server.html",
     ]);
-    media.target("#faas-table").html([
+    media.target("#apps").html([
         // "html/server-list.html",
         "html/app-list.html",
     ]);
@@ -81,7 +81,7 @@ script.onload = function () {
 
     var images = new Load(document.body, success, error);
     // var images = new Load(document.body, success, error, loader);
-    images.target("#home-images");
+    images.target("#images");
 
     images.img([
         "//logo.faas.ovh/4/cover.png"

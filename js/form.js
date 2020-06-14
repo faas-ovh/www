@@ -7,7 +7,10 @@
 function AddMessage(text) {
 
     var message = new Message({
-        'class': 'messages'
+        'class': 'messages',
+        'id': 'messages',
+        'element': {},
+        'message': ''
     });
     message.add(text);
 }

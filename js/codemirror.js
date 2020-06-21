@@ -23,5 +23,19 @@ var editor = CodeMirror(document.body.getElementsByTagName("article")[0], {
 
 $('.submit').on('click', function (){
     $('textarea.code').val( editor.getValue() );
+    $('.CodeMirror textarea').focus();
+
     //     $('form').submit();//die form mit id = form
 })
+
+// $('.CodeMirror').click();
+// $('article').trigger("click");
+// $('.CodeMirror').trigger("click");
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+    // $('#environment').trigger("click");
+    // $('article').focus();
+    // $('.CodeMirror').click();
+    $('.CodeMirror textarea').focus();
+});

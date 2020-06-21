@@ -10,6 +10,9 @@ TODO:
 buttons
 https://getbootstrap.com/docs/4.0/components/buttons/
 
+### Examples of similiar solutions
+https://aws.amazon.com/de/cloud9/
+https://ace.c9.io/
 
 ## Run Service on linux
 
@@ -42,3 +45,10 @@ The screen will detach and survive you logging off. Then you can get it back bac
     node myserver.js
     
 >>CTRL-A then hit D
+
+
+## libraries
+https://highlightjs.org/download/
+
+
+https://github.com/emmetio/textarea/blob/master/emmet.min.js

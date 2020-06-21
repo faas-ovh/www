@@ -31,11 +31,17 @@ $('.submit').on('click', function (){
 // $('.CodeMirror').click();
 // $('article').trigger("click");
 // $('.CodeMirror').trigger("click");
-
+/*
 $( document ).ready(function() {
+
     console.log( "ready!" );
     // $('#environment').trigger("click");
     // $('article').focus();
-    // $('.CodeMirror').click();
-    $('.CodeMirror textarea').focus();
+    // $("article").trigger("click");
+    $(".CodeMirror").trigger("click");
+    $(".CodeMirror textarea").focus();
+    // $('.CodeMirror textarea').trigger("click");
 });
+*/
+$(".CodeMirror").trigger("click");
+$(".CodeMirror textarea").focus();

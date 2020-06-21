@@ -67,9 +67,9 @@
             min-height: 210px;
         }
 
-        #apps {
-            min-height: 210px;
-        }
+        /*#apps {*/
+        /*    min-height: 210px;*/
+        /*}*/
 
         #messages {
             height: 150px;
@@ -103,8 +103,8 @@
 
     <!--    <link rel="stylesheet"          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">-->
     <!--    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>-->
-    <script src="js/highlight.min.js"></script>
-    <script src="js/emmet.min.js"></script>
+    <!--    <script src="js/highlight.min.js"></script>-->
+    <!--    <script src="js/emmet.min.js"></script>-->
 
 
     <script>
@@ -140,9 +140,9 @@
                 // "html/sublime.html"
                 "js/codemirror.js"
             ],
-            "#apps": [
-                "html/app-list.html"
-            ],
+            // "#apps": [
+            //     "html/app-list.html"
+            // ],
             "#messages": [
                 "js/messages.js"
             ],
@@ -152,6 +152,35 @@
 
         });
 
+
+        //
+        // jloadsEvent({
+        //     "#forms:onload": [
+        //         "js/codemirror.js"
+        //     ],
+        //     "#forms:submit": [
+        //         "js/codemirror.js"
+        //     ],
+        //     "#forms:click": [
+        //         "js/codemirror.js"
+        //     ],
+        //     "#forms:hover": [
+        //         "js/codemirror.js"
+        //     ],
+        // });
+
+        $(document).ready(function () {
+
+            console.log("ready!");
+
+            jloadsUrl({
+                "head": [
+                    "js/codemirror.js"
+                ]
+            });
+
+            // $('.CodeMirror textarea').trigger("click");
+        });
     </script>
 
 </head>

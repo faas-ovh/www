@@ -151,10 +151,15 @@
             ]
 
         });
-        jloadsUrl({
-            "head": [
-                "js/codemirror.js"
-        ]});
+
+        setTimeout(function (){
+            jloadsUrl({
+                "head": [
+                    "js/codemirror.js"
+                ]});
+        }, 1000)
+
+
 
         //
         // jloadsEvent({

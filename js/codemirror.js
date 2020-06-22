@@ -55,5 +55,5 @@ window.setTimeout(function (){
     $(".CodeMirror textarea").focus();
 
 
-}, 2000);
+}, 200);
 

@@ -9,39 +9,51 @@ for (var key in map) {
 value += "}\n\n// The implementation of joinLines\n";
 value += CodeMirror.commands.joinLines.toString().replace(/^function\s*\(/, "function joinLines(").replace(/\n  /g, "\n") + "\n";
 */
-var editor = CodeMirror(document.body.getElementsByTagName("article")[0], {
-    value: '',
-    lineNumbers: true,
-    mode: "javascript",
-    keyMap: "sublime",
-    autoCloseBrackets: true,
-    matchBrackets: true,
-    showCursorWhenSelecting: true,
-    theme: "monokai",
-    tabSize: 2
-});
+var editor = {};
 
-$('.submit').on('click', function (){
-    $('textarea.code').val( editor.getValue() );
-    $('.CodeMirror textarea').focus();
+window.setTimeout(function (){
 
-    //     $('form').submit();//die form mit id = form
-})
+    editor = CodeMirror(document.body.getElementsByTagName("article")[0], {
+        value: '',
+        lineNumbers: true,
+        mode: "javascript",
+        keyMap: "sublime",
+        autoCloseBrackets: true,
+        matchBrackets: true,
+        showCursorWhenSelecting: true,
+        theme: "monokai",
+        tabSize: 2
+    });
+
+
+
+
+
+    $('.submit').on('click', function (){
+        $('textarea.code').val( editor.getValue() );
+        $('.CodeMirror textarea').focus();
+
+        //     $('form').submit();//die form mit id = form
+    })
 
 // $('.CodeMirror').click();
 // $('article').trigger("click");
 // $('.CodeMirror').trigger("click");
-/*
-$( document ).ready(function() {
+    /*
+    $( document ).ready(function() {
 
-    console.log( "ready!" );
-    // $('#environment').trigger("click");
-    // $('article').focus();
-    // $("article").trigger("click");
+        console.log( "ready!" );
+        // $('#environment').trigger("click");
+        // $('article').focus();
+        // $("article").trigger("click");
+        $(".CodeMirror").trigger("click");
+        $(".CodeMirror textarea").focus();
+        // $('.CodeMirror textarea').trigger("click");
+    });
+    */
     $(".CodeMirror").trigger("click");
     $(".CodeMirror textarea").focus();
-    // $('.CodeMirror textarea').trigger("click");
-});
-*/
-$(".CodeMirror").trigger("click");
-$(".CodeMirror textarea").focus();
+
+
+}, 2000);
+

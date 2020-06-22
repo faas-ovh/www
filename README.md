@@ -10,6 +10,14 @@ TODO:
 buttons
 https://getbootstrap.com/docs/4.0/components/buttons/
 
+## Benefits of FaaS
+
++ Increased developer productivity and faster development time
++ Not responsible for server management
++ Easy to scale and horizontal scaling is managed by the platform
++ Only pay for or consume resources when necessary
++ Functions can be written in almost any programming language
+
 ### Examples of similiar solutions
 https://aws.amazon.com/de/cloud9/
 https://ace.c9.io/

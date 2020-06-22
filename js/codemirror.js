@@ -26,34 +26,31 @@ window.setTimeout(function (){
     });
 
 
+}, 200);
 
 
 
-    $('.submit').on('click', function (){
-        $('textarea.code').val( editor.getValue() );
-        $('.CodeMirror textarea').focus();
+$('.submit').on('click', function (){
+    $('textarea.code').val( editor.getValue() );
+    $('.CodeMirror textarea').focus();
 
-        //     $('form').submit();//die form mit id = form
-    })
+    //     $('form').submit();//die form mit id = form
+})
 
 // $('.CodeMirror').click();
 // $('article').trigger("click");
 // $('.CodeMirror').trigger("click");
-    /*
-    $( document ).ready(function() {
+/*
+$( document ).ready(function() {
 
-        console.log( "ready!" );
-        // $('#environment').trigger("click");
-        // $('article').focus();
-        // $("article").trigger("click");
-        $(".CodeMirror").trigger("click");
-        $(".CodeMirror textarea").focus();
-        // $('.CodeMirror textarea').trigger("click");
-    });
-    */
+    console.log( "ready!" );
+    // $('#environment').trigger("click");
+    // $('article').focus();
+    // $("article").trigger("click");
     $(".CodeMirror").trigger("click");
     $(".CodeMirror textarea").focus();
-
-
-}, 200);
-
+    // $('.CodeMirror textarea').trigger("click");
+});
+*/
+$(".CodeMirror").trigger("click");
+$(".CodeMirror textarea").focus();

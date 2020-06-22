@@ -44,3 +44,41 @@
     <input type="submit" name="submit" class="submit" value="Run">
 
 </form>
+
+
+<script>
+    // $(document).ready(function () {
+
+        console.log("ready!");
+        //
+        // jloadsUrl({
+        //     "head": [
+        //         "js/codemirror.js"
+        //     ]
+        // });
+
+        // $('.CodeMirror textarea').trigger("click");
+
+
+        var editor = CodeMirror(document.body.getElementsByTagName("article")[0], {
+            value: '',
+            lineNumbers: true,
+            mode: "javascript",
+            keyMap: "sublime",
+            autoCloseBrackets: true,
+            matchBrackets: true,
+            showCursorWhenSelecting: true,
+            theme: "monokai",
+            tabSize: 2
+        });
+
+        $('.submit').on('click', function (){
+            $('textarea.code').val( editor.getValue() );
+            $('.CodeMirror textarea').focus();
+        })
+
+        $(".CodeMirror").trigger("click");
+        $(".CodeMirror textarea").focus();
+
+    // });
+</script>

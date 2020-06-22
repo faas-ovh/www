@@ -136,9 +136,9 @@
                 "js/form.js?1"
             ],
             "#forms": [
-                "html/server.html",
+                "html/server.html"
                 // "html/sublime.html"
-                "js/codemirror.js"
+                // "js/codemirror.js"
             ],
             // "#apps": [
             //     "html/app-list.html"
@@ -151,7 +151,10 @@
             ]
 
         });
-
+        jloadsUrl({
+            "head": [
+                "js/codemirror.js"
+        ]});
 
         //
         // jloadsEvent({

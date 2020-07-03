@@ -13,24 +13,39 @@ var editor = {};
 
 // window.setTimeout(function (){
 
-editor = CodeMirror(document.body.getElementsByTagName("article")[0], {
-    value: '',
-    lineNumbers: true,
-    mode: "javascript",
-    keyMap: "sublime",
-    autoCloseBrackets: true,
-    matchBrackets: true,
-    showCursorWhenSelecting: true,
-    theme: "monokai",
-    tabSize: 2
-});
+
+runScript();
+function runScript() {
+    if (window.CodeMirror) {
+        // do your action that depends on Function.
 
 
-var urla = $('#sourcecode').val();
-loadText(urla, function (text, url) {
-    console.log(text, url);
-    editor.setValue(text)
-});
+        editor = CodeMirror(document.body.getElementsByTagName("article")[0], {
+            value: '',
+            lineNumbers: true,
+            mode: "javascript",
+            keyMap: "sublime",
+            autoCloseBrackets: true,
+            matchBrackets: true,
+            showCursorWhenSelecting: true,
+            theme: "monokai",
+            tabSize: 2
+        });
+
+
+        var urla = $('#sourcecode').val();
+        loadText(urla, function (text, url) {
+            console.log(text, url);
+            editor.setValue(text)
+        });
+
+
+    } else {
+        // wait 50 milliseconds and try again.
+        window.setTimeout(runScript, 100);
+    }
+}
+
 
 // }, 300);
 

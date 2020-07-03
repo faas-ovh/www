@@ -51,5 +51,5 @@ form.submit();
 
 
 var urla = $('#sourcecode').val();
-var jload = new Load('#code', success, error);
-jload['json'](urla);
+var jload = new Load('#code');
+jload["json"](urla);

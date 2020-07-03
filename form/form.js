@@ -49,13 +49,3 @@ form.cfg({
 
 form.submit();
 
-
-// var jload = new Load('#code');
-// jload["json"](urla);
-// editor.setValue()
-
-var urla = $('#sourcecode').val();
-loadText(urla, function (text, url) {
-    console.log(text, url);
-    editor.setValue(text)
-});

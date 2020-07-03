@@ -5,7 +5,8 @@ button {
     height: 20px;
     padding: 0;
 }
-.prompt{
+
+.prompt {
     color: #2aabd2;
 }
 
@@ -44,6 +45,16 @@ a {
     float: left;
 
 }
-#subdomain {
+
+input[type=text] {
     text-align: right;
+}
+
+fieldset {
+    border: 1px solid #dddddd;
+    background: #eeeeee;
+}
+
+fieldset label {
+    margin-right: 20px;
 }

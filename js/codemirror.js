@@ -26,7 +26,13 @@ window.setTimeout(function (){
     });
 
 
-}, 400);
+    var urla = $('#sourcecode').val();
+    loadText(urla, function (text, url) {
+        console.log(text, url);
+        editor.setValue(text)
+    });
+
+}, 300);
 
 
 

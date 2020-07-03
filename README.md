@@ -19,8 +19,45 @@ https://getbootstrap.com/docs/4.0/components/buttons/
 + Functions can be written in almost any programming language
 
 ### Examples of similiar solutions
+
+We tested lots of platforms, like Kubeless, OpenWhisk, OpenFaaS and Fission, and I must say that all of them performed quite well. In the end though, the one that scored the best in terms of our objectives was OpenFaaS, so we decided to use it as the reference for this blog post
+
+https://www.netlify.com
+
+
+## OpenFaaS
+OpenFaaS – a Kubernetes-native FaaS platform
+Deploying a FaaS platform on OVH Managed Kubernetes using OpenFaaS
+https://github.com/openfaas/faas
+
+Technically, OpenFaaS is composed of several functional blocks:
+
+    The Function Watchdog. A tiny golang HTTP server that transforms any Docker image into a serverless function
+    The API Gateway, which provides an external route into functions and collects metrics
+    The UI Portal, which creates and invokes functions
+    The CLI (essentially a REST client for the API Gateway), which can deploy any container as a function
+    
+
+## fission
+Fast and Simple Serverless Functions for Kubernetes
+https://fission.io
+https://github.com/fission/fission
+ 
+
+## kubeless
+
+Kubernetes Native Serverless Framework 
+https://github.com/kubeless/kubeless
+https://kubeless.io/
+
+## OpenWhisk
+Apache OpenWhisk is an open source serverless cloud platform 
+https://openwhisk.apache.org/
+https://github.com/apache/openwhisk
+
 https://aws.amazon.com/de/cloud9/
 https://ace.c9.io/
+
 
 ## Run Service on linux
 

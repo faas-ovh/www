@@ -11,33 +11,32 @@ value += CodeMirror.commands.joinLines.toString().replace(/^function\s*\(/, "fun
 */
 var editor = {};
 
-window.setTimeout(function (){
+// window.setTimeout(function (){
 
-    editor = CodeMirror(document.body.getElementsByTagName("article")[0], {
-        value: '',
-        lineNumbers: true,
-        mode: "javascript",
-        keyMap: "sublime",
-        autoCloseBrackets: true,
-        matchBrackets: true,
-        showCursorWhenSelecting: true,
-        theme: "monokai",
-        tabSize: 2
-    });
-
-
-    var urla = $('#sourcecode').val();
-    loadText(urla, function (text, url) {
-        console.log(text, url);
-        editor.setValue(text)
-    });
-
-}, 300);
+editor = CodeMirror(document.body.getElementsByTagName("article")[0], {
+    value: '',
+    lineNumbers: true,
+    mode: "javascript",
+    keyMap: "sublime",
+    autoCloseBrackets: true,
+    matchBrackets: true,
+    showCursorWhenSelecting: true,
+    theme: "monokai",
+    tabSize: 2
+});
 
 
+var urla = $('#sourcecode').val();
+loadText(urla, function (text, url) {
+    console.log(text, url);
+    editor.setValue(text)
+});
 
-$('.submit').on('click', function (){
-    $('textarea.code').val( editor.getValue() );
+// }, 300);
+
+
+$('.submit').on('click', function () {
+    $('textarea.code').val(editor.getValue());
     $('.CodeMirror textarea').focus();
 
     //     $('form').submit();//die form mit id = form

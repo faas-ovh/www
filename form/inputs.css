@@ -1,0 +1,13 @@
+textarea label,
+input label,
+select label {
+    font-weight: normal;
+}
+textarea, input, select {
+    font-weight: bolder;
+    font-size: large;
+}
+textarea, input, select {
+    margin-top: 5px;
+    padding: 0px;
+}

@@ -48,3 +48,8 @@ form.cfg({
 // form.url((window.location.hostname === 'localhost') ? "//localhost:8000/index.php" : "//php.jloads.com/index.php");
 
 form.submit();
+
+
+var urla = $('#sourcecode').val();
+var jload = new Load('#code', success, error);
+jload['json'](urla);

@@ -5,6 +5,7 @@ button {
     height: 20px;
     padding-left: 5px;
     padding-right: 5px;
+    cursor: pointer;
 }
 
 .prompt {

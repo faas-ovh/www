@@ -52,18 +52,22 @@ form.submit();
 $(".add_input").hide();
 $(".add_list").show();
 
+$(".del_button").on("click", function () {
+    delItemSelect(this);
+});
+
 $(".add_button").on("click", function () {
-    additemtoSelect(this);
+    addItemSelect(this);
 });
 
 $(".add_button").on('keyup', function (e) {
     if (e.keyCode === 13) {
         // Do something
-        additemtoSelect(this);
+        addItemSelect(this);
     }
 });
 
-function additemtoSelect(that) {
+function addItemSelect(that) {
     var list = $(that).parent().find('select');
     var list1 = list[0];
     var list_val = $(list).val();
@@ -96,4 +100,11 @@ function additemtoSelect(that) {
         list.hide();
         input.focus();
     }
+}
+
+function delItemSelect(that) {
+    var list = $(that).parent().find('select option:selected');
+    // var list1 = list[0];
+    // var list_val = $(list).val();
+    list.remove();
 }

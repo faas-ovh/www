@@ -17,3 +17,32 @@ textarea, input, select {
 textarea, input, select {
     width: 180px;
 }
+input.submit {
+    background-color: #fb7e14;
+    color: white;
+    font-size: large;
+}
+
+input[type=text] {
+    text-align: right;
+}
+
+fieldset {
+    color: #fb7e14;
+    border: 1px solid #dddddd;
+    background: #eeeeee;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+
+fieldset label {
+    margin-right: 5px;
+}
+fieldset.last {
+    /*margin: 3px auto;*/
+    /*background-color: #fb7e14;*/
+    text-align: right;
+}

@@ -47,20 +47,3 @@ a {
     float: left;
 
 }
-
-input[type=text] {
-    text-align: right;
-}
-
-fieldset {
-    border: 1px solid #dddddd;
-    background: #eeeeee;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-
-fieldset label {
-    margin-right: 5px;
-}

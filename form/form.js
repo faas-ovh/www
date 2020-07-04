@@ -53,7 +53,20 @@ $(".add_input").hide();
 $(".add_list").show();
 
 $(".del_button").on("click", function () {
-    delItemSelect(this);
+    var list = $(this).parent().find('select');
+    var input = $(this).parent().find('input');
+    var input_val = $(this).val();
+    console.log('>input del_button', input, input_val, input.is(":visible"));
+
+    if (input.is(":visible")) {
+        input.val("");
+        input.hide();
+        list.show();
+        list.prop("selectedIndex", 0);
+        list.focus();
+    } else {
+        delItemSelect(this);
+    }
 });
 
 $(".add_button").on("click", function () {
@@ -69,16 +82,14 @@ $(".add_button").on('keyup', function (e) {
 
 function addItemSelect(that) {
     var list = $(that).parent().find('select');
-    var list1 = list[0];
     var list_val = $(list).val();
 
-    console.log('>list', list, list_val);
+    console.log('>list addItemSelect', list, list_val);
 
     var input = $(that).parent().find('input');
-    var input1 = input[0];
     var input_val = $(input).val();
 
-    console.log('>input', input, input_val);
+    console.log('>input addItemSelect', input, input_val);
 
     if (input_val.length) {
         console.log('>add to list', input_val);

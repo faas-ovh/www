@@ -1,4 +1,3 @@
-
 /**
  *
  * @param text
@@ -49,3 +48,52 @@ form.cfg({
 
 form.submit();
 
+
+$(".add_input").hide();
+$(".add_list").show();
+
+$(".add_button").on("click", function () {
+    additemtoSelect(this);
+});
+
+$(".add_button").on('keyup', function (e) {
+    if (e.keyCode === 13) {
+        // Do something
+        additemtoSelect(this);
+    }
+});
+
+function additemtoSelect(that) {
+    var list = $(that).parent().find('select');
+    var list1 = list[0];
+    var list_val = $(list).val();
+
+    console.log('>list', list, list_val);
+
+    var input = $(that).parent().find('input');
+    var input1 = input[0];
+    var input_val = $(input).val();
+
+    console.log('>input', input, input_val);
+
+    if (input_val.length) {
+        console.log('>add to list', input_val);
+        // innerHTML
+        // var item = $('<option value="' + input_val + '">' + input_val + '</option>');
+        var item = $('<option>').val(input_val).text(input_val);
+        list.prepend(item);
+        // list.append(item);
+
+        input.val("");
+        input.hide();
+        list.show();
+        list.prop("selectedIndex", 0);
+        list.focus();
+    } else {
+        // $(".add_input").show();
+        input.show();
+        // $(".add_list").hide();
+        list.hide();
+        input.focus();
+    }
+}

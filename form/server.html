@@ -9,14 +9,18 @@
     <!--    </fieldset>-->
     <!--    </p>-->
 
-
     <p>
     <fieldset>
         <label for="ip">ip</label>
-        <input type="text" name="ip" id="ip" value="127.0.0.1">
-
+        <select name="ip" id="ip" class="add_list">
+            <option value="127.0.0.1">127.0.0.1</option>
+            <option value="127.123.121.11">127.123.121.119</option>
+        </select>
+        <input type="text" name="add_ip" id="add_ip" class="add_input" value="">
+        <button class="add_ip add_button">+</button>
     </fieldset>
     </p>
+
 
     <!--    <p>-->
     <!--    <fieldset>-->
@@ -43,11 +47,11 @@
     <p>
     <fieldset>
         <label for="environment">environment</label>
-        <select name="environment" id="environment">
+        <select name="environment" id="environment" class="add_list">
             <option value="1">python v3.8 + Django</option>
             <option value="2">python v3.8 + Flask</option>
             <option value="3">python + FastAPI</option>
-            <option value="4">nodejs</option>
+            <option value="4">nodejs + express</option>
             <option value="5">nodejs + Vue</option>
             <option value="6">php5 + Apache2</option>
             <option value="7">php7.4 + Apache2</option>
@@ -56,19 +60,21 @@
             <option value="10">MariaDB</option>
             <option value="11">PostgresSQL</option>
         </select>
-        <button>+</button>
+        <input type="text" name="add_environment" id="add_environment" class="add_input" value="">
+        <button class="add_environment add_button">+</button>
     </fieldset>
     </p>
 
     <p>
     <fieldset>
         <label for="sourcecode">sourcecode</label>
-        <select name="sourcecode" id="sourcecode">
+        <select name="sourcecode" id="sourcecode" class="add_list">
             <option value="code/extension.js">extension.js</option>
             <option value="code/server.js">faas-ovh/form/server.js</option>
             <option value="code/server.php">faas-ovh/form/server.php</option>
         </select>
-        <button>+</button>
+        <input type="text" name="add_sourcecode" id="add_sourcecode" class="add_input" value="">
+        <button class="add_sourcecode add_button">+</button>
     </fieldset>
     </p>
 

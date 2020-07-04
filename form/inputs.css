@@ -6,7 +6,7 @@ select label {
 
 textarea, input, select {
     font-weight: normal;
-    font-size: large;
+    font-size: medium;
 }
 
 textarea, input, select {
@@ -15,5 +15,5 @@ textarea, input, select {
 }
 /* SIZE */
 textarea, input, select {
-    width: 200px;
+    width: 180px;
 }

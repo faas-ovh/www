@@ -3,11 +3,17 @@ input label,
 select label {
     font-weight: normal;
 }
+
 textarea, input, select {
-    font-weight: bold;
+    font-weight: normal;
     font-size: large;
 }
+
 textarea, input, select {
     /*margin-top: 2px;*/
     padding: 0px;
+}
+/* SIZE */
+textarea, input, select {
+    width: 200px;
 }

@@ -55,9 +55,9 @@ input[type=text] {
 fieldset {
     border: 1px solid #dddddd;
     background: #eeeeee;
-    margin-bottom: 2px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    margin-bottom: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 fieldset label {

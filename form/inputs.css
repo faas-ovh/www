@@ -4,10 +4,10 @@ select label {
     font-weight: normal;
 }
 textarea, input, select {
-    font-weight: bolder;
+    font-weight: bold;
     font-size: large;
 }
 textarea, input, select {
-    margin-top: 5px;
+    /*margin-top: 2px;*/
     padding: 0px;
 }

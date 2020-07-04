@@ -11,8 +11,10 @@
     </span>
 
     <fieldset>
-        <label for="sourcecode">Sourcecode:</label>
+        <label for="sourcecode">Sourcecode</label>
         <button class="del_sourcecode del_button">-</button>
+        <button class="add_sourcecode add_button">+</button>
+        <br>
 
         <select name="sourcecode" id="sourcecode" class="add_list">
             <option value="code/extension.js">extension.js</option>
@@ -20,7 +22,6 @@
             <option value="code/server.php">faas-ovh/form/server.php</option>
         </select>
         <input type="text" name="add_sourcecode" id="add_sourcecode" class="add_input" value="">
-        <button class="add_sourcecode add_button">+</button>
     </fieldset>
 
     <article autofocus>
@@ -34,8 +35,10 @@
               autofocus></textarea>
 
     <fieldset>
-        <label for="environment">Environment:</label>
+        <label for="environment">Environment</label>
         <button class="del_environment del_button">-</button>
+        <button class="add_environment add_button">+</button>
+        <br>
 
         <select name="environment" id="environment" class="add_list">
             <option value="1">python v3.8 + Django</option>
@@ -51,7 +54,6 @@
             <option value="11">PostgresSQL</option>
         </select>
         <input type="text" name="add_environment" id="add_environment" class="add_input" value="">
-        <button class="add_environment add_button">+</button>
     </fieldset>
 
     <fieldset class="last">

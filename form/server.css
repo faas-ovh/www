@@ -1,13 +1,3 @@
-
-button {
-    margin-top: 3px;
-    margin-left: 5px;
-    height: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-    cursor: pointer;
-}
-
 .prompt {
     color: #2aabd2;
 }

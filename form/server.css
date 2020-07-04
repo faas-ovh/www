@@ -55,8 +55,8 @@ input[type=text] {
 fieldset {
     border: 1px solid #dddddd;
     background: #eeeeee;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     padding-top: 3px;
     padding-bottom: 3px;
 }

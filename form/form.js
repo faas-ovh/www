@@ -40,8 +40,8 @@ var form = new RestForm('form', response, error, success);
 form.cfg({
     "target": "form",
     // "url": "//php.jloads.com/index.php",
-    "url": "/index",
-    "method": "GET",
+    "url": "/query",
+    "method": "POST",
     "event": "submit"
 });
 

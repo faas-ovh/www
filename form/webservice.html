@@ -4,7 +4,7 @@
 
 
     <span>
-        Select <code>frontend</code> & <code>backend</code> which should be executed by selected <code>Environment</code>
+        Select <code>frontend</code> & <code>backend</code> which should be executed by <code>https Server</code> on <code>IP Server</code>
     </span>
 
     <fieldset>
@@ -34,24 +34,6 @@
         <button class="add_backend add_button">+</button>
     </fieldset>
 
-<!--    <fieldset>-->
-<!--        <label for="sourcecode">Sourcecode</label>-->
-<!--        <br>-->
-<!--        <button class="del_sourcecode del_button">-</button>-->
-
-<!--        <select name="sourcecode" id="sourcecode" class="add_list">-->
-<!--            <option value="code/extension.js">extension.js</option>-->
-<!--            <option value="code/server.js">faas-ovh/form/server.js</option>-->
-<!--            <option value="code/server.php">faas-ovh/form/server.php</option>-->
-<!--        </select>-->
-<!--        <input type="text" name="add_sourcecode" id="add_sourcecode" class="add_input" value="">-->
-
-<!--        <button class="add_sourcecode add_button">+</button>-->
-<!--    </fieldset>-->
-
-    <article autofocus>
-
-    </article>
     <!--        <label for="code">code</label>-->
     <textarea name="code"
               id="code"
@@ -60,17 +42,28 @@
               autofocus></textarea>
 
     <fieldset>
-        <label for="server">Server</label>
+        <label for="https">HTTPS Server</label>
         <br>
-        <button class="del_server del_button">-</button>
+        <button class="del_https del_button">-</button>
 
-        <select name="server" id="server" class="add_list">
+        <select name="https" id="https" class="add_list">
             <option value="apache2">Apache2</option>
             <option value="nginx">NGINX</option>
         </select>
-        <input type="text" name="add_server" id="add_server" class="add_input" value="">
-        <button class="add_server add_button">+</button>
+        <input type="text" name="add_https" id="add_https" class="add_input" value="">
+        <button class="add_https add_button">+</button>
+    </fieldset>
 
+    <fieldset>
+        <label for="ip">IP Server</label>
+        <br>
+        <button class="del_ip del_button">-</button>
+
+        <select name="ip" id="ip" class="add_list">
+            <option value="212.227.200.232">212.227.200.232</option>
+        </select>
+        <input type="text" name="add_ip" id="add_ip" class="add_input" value="">
+        <button class="add_ip add_button">+</button>
     </fieldset>
 
     <fieldset class="last">

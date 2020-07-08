@@ -15,7 +15,7 @@ textarea, input, select {
 }
 /* SIZE */
 textarea, input, select {
-    width: 180px;
+    width: 200px;
 }
 input.submit {
     background-color: #fb7e14;

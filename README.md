@@ -6,7 +6,8 @@ Website
 
 
 TODO:
-
+bash script generator for full deployment by console
+ 
 buttons
 https://getbootstrap.com/docs/4.0/components/buttons/
 

@@ -4,7 +4,7 @@
 
 
     <span>
-        Select <code>frontend</code> & <code>backend</code> which should be executed by <code>https Server</code> on <code>IP Server</code>
+        Select <code>frontend</code> & <code>backend</code> which should be executed by <code>https Server</code> on <code>Server</code>
     </span>
 
     <fieldset>
@@ -55,16 +55,28 @@
     </fieldset>
 
     <fieldset>
-        <label for="ip">IP Server</label>
+        <label for="domain">Server</label>
         <br>
-        <button class="del_ip del_button">-</button>
+        <button class="del_domain del_button">-</button>
 
-        <select name="ip" id="ip" class="add_list">
-            <option value="212.227.200.232">212.227.200.232</option>
+        <select name="domain" id="domain" class="add_list">
+            <option value="2.faas.ovh">2.faas.ovh</option>
         </select>
-        <input type="text" name="add_ip" id="add_ip" class="add_input" value="">
-        <button class="add_ip add_button">+</button>
+        <input type="text" name="add_domain" id="add_domain" class="add_input" value="">
+        <button class="add_domain add_button">+</button>
     </fieldset>
+<!--    -->
+<!--    <fieldset>-->
+<!--        <label for="ip">IP Server</label>-->
+<!--        <br>-->
+<!--        <button class="del_ip del_button">-</button>-->
+
+<!--        <select name="ip" id="ip" class="add_list">-->
+<!--            <option value="212.227.200.232">212.227.200.232</option>-->
+<!--        </select>-->
+<!--        <input type="text" name="add_ip" id="add_ip" class="add_input" value="">-->
+<!--        <button class="add_ip add_button">+</button>-->
+<!--    </fieldset>-->
 
     <fieldset class="last">
         <input type="submit" name="submit" class="submit" value="Run">

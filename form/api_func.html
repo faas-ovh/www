@@ -9,7 +9,7 @@
     </span>
 
     <fieldset>
-        <label for="frontend">Frontend sourcecode, github: organisation/repository</label>
+        <label for="frontend">API backend sourcecode, github: organisation/repository</label>
         <br>
         <button class="del_frontend del_button">-</button>
 
@@ -19,36 +19,6 @@
         <input type="text" name="add_frontend" id="add_frontend" class="add_input" value="">
 
         <button class="add_frontend add_button">+</button>
-    </fieldset>
-
-
-    <fieldset>
-        <label for="backend">Backend sourcecode, github: organisation/repository</label>
-        <br>
-        <button class="del_backend del_button">-</button>
-
-        <select name="backend" id="backend" class="add_list">
-            <option value="goethe-pl/app-python">goethe-pl/app-python</option>
-        </select>
-        <input type="text" name="add_backend" id="add_backend" class="add_input" value="">
-
-        <button class="add_backend add_button">+</button>
-    </fieldset>
-
-
-    <fieldset>
-        <label for="database">Database sql statements, github: organisation/repository</label>
-        <br>
-        <button class="del_database del_button">-</button>
-
-        <select name="database" id="database" class="add_list">
-            <option value="goethe-pl/app-python">goethe-pl/app-mysql</option>
-            <option value="goethe-pl/app-python">goethe-pl/app-postgresql</option>
-            <option value="goethe-pl/app-python">goethe-pl/app-redis</option>
-        </select>
-        <input type="text" name="add_database" id="add_database" class="add_input" value="">
-
-        <button class="add_database add_button">+</button>
     </fieldset>
 
 
@@ -66,18 +36,27 @@
     </span>
 
     <fieldset>
-        <label for="https">HTTPS Server</label>
+        <label for="https">Server/Engine</label>
         <br>
         <button class="del_https del_button">-</button>
 
         <select name="https" id="https" class="add_list">
-            <option value="apache2">Apache2</option>
-            <option value="nginx">NGINX</option>
+            <option value="apache2">https Server: Apache2</option>
+            <option value="nginx">https Server: NGINX</option>
+            <option value="nginx">DB Server: MySQL</option>
+            <option value="nginx">DB Server: PostgreSQL</option>
+            <option value="nginx">DB Server: Oracle</option>
         </select>
         <input type="text" name="add_https" id="add_https" class="add_input" value="">
         <button class="add_https add_button">+</button>
     </fieldset>
 
+
+    <h2>Infrastructure</h2>
+
+    <span>
+        Connect to environment on  <code>Server</code> to <code>internet domain</code>
+    </span>
 
     <fieldset>
         <label for="domain">Domain</label>

@@ -5,11 +5,21 @@
 Website
 
 
-TODO:
-bash script generator for full deployment by console
- 
+## TODO:
++ bash script generator for full deployment by console
+    + create one file with all bash commands
++ docker generator
+    + from docker to faas
+    + from faas to docker
+    
++ yaml file of settings generator (from form values)
+    + create examples
+    + create patterns, models
+
 buttons
 https://getbootstrap.com/docs/4.0/components/buttons/
+
+
 
 ## Benefits of FaaS
 

@@ -25,7 +25,7 @@ window.setInterval(function () {
     // var el = document.createElement('html');
     // el.innerHTML = html;
 
-    var json = "jloadsUrl({\n";
+    var json = "jl.target({\n";
     json += "   \"head\": [\n";
 
     var obj = el.querySelectorAll('script');

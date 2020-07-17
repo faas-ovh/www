@@ -24,15 +24,15 @@ $(".add_button").on("click", function (e) {
     e.preventDefault();
     addItemSelect(this);
 });
-//
-// $(".add_button").on('keyup', function (e) {
-//     e.preventDefault();
-//
-//     if (e.keyCode === 13) {
-//         // Do something
-//         addItemSelect(this);
-//     }
-// });
+
+$(".add_button").on('keyup', function (e) {
+    e.preventDefault();
+
+    if (e.keyCode === 13) {
+        // Do something
+        addItemSelect(this);
+    }
+});
 
 function addItemSelect(that) {
     var list = $(that).parent().find('select');

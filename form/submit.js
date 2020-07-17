@@ -3,8 +3,8 @@ var form = new RestForm('form', response, error, success);
 form.cfg({
     "target": "form",
     // "url": "//php.jloads.com/index.php",
-    // "url": "/deploy",
-    "url": "//api.faas.ovh/deploy",
+    "url": "/deploy",
+    // "url": "//api.faas.ovh/deploy",
     "method": "POST",
     "event": "submit"
 });

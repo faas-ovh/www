@@ -2,7 +2,7 @@ $(".add_input").hide();
 $(".add_list").show();
 
 $(".del_button").on("click", function (e) {
-    e.preventDefault();
+    // e.preventDefault();
 
     var list = $(this).parent().find('select');
     var input = $(this).parent().find('input');
@@ -26,7 +26,7 @@ $(".add_button").on("click", function (e) {
 });
 
 $(".add_button").on('keyup', function (e) {
-    e.preventDefault();
+    // e.preventDefault();
 
     if (e.keyCode === 13) {
         // Do something

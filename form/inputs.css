@@ -13,10 +13,12 @@ textarea, input, select {
     /*margin-top: 2px;*/
     padding: 0px;
 }
+
 /* SIZE */
 textarea, input, select {
     width: 200px;
 }
+
 input.submit {
     background-color: #fb7e14;
     color: white;
@@ -41,9 +43,13 @@ fieldset {
 fieldset label {
     margin-right: 2px;
     font-weight: normal;
-    font-size: small;
+    font-size: medium;
+    text-align: left;
+    display: block;
+    margin-bottom: 0;
 
 }
+
 fieldset.last {
     /*margin: 3px auto;*/
     /*background-color: #fb7e14;*/
@@ -62,10 +68,12 @@ button {
     text-align: center;
 
 }
+
 button.add_button {
     background-color: green;
     color: white;
 }
+
 button.del_button {
     background-color: darkred;
     color: white;

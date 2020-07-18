@@ -20,6 +20,17 @@ buttons
 https://getbootstrap.com/docs/4.0/components/buttons/
 
 
+## Script generator
+
+https://spacy.io/usage
+![spacy](docs/spacy.png)
+
+
+## binder
+https://mybinder.org
+![binder](docs/binder.png)
+Have a repository full of Jupyter notebooks? With Binder, open those notebooks in an executable environment, making your code immediately reproducible by anyone, anywhere. 
+
 
 ## Benefits of FaaS
 

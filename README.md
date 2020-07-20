@@ -23,9 +23,11 @@ gith
     + create examples
     + create patterns, models
 
-buttons
+### buttons
 https://getbootstrap.com/docs/4.0/components/buttons/
 
+### KeePass 
+https://pypi.org/project/pykeepass/
 
 ## Script generator
 
@@ -38,6 +40,10 @@ https://mybinder.org
 ![binder](docs/binder.png)
 Have a repository full of Jupyter notebooks? With Binder, open those notebooks in an executable environment, making your code immediately reproducible by anyone, anywhere. 
 
+## bit.dev
+
+https://bit.dev/davidhu2000/react-spinners/fade-loader
+![bit.dev](docs/bit.dev.png)
 
 ## Benefits of FaaS
 

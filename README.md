@@ -5,7 +5,7 @@
 
 + [demo online - www.faas.ovh](https://www.faas.ovh/)
 
-+ [faas project on github](https://github.com/faas-ovh/www)
+gith
 
 + [another github projects](https://github.com/faas-ovh)
 

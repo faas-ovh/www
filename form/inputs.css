@@ -1,7 +1,7 @@
 textarea label,
 input label,
 select label {
-    font-weight: normal;
+    font-weight: bold;
 }
 
 textarea, input, select {
@@ -32,7 +32,7 @@ input[type=text] {
 fieldset {
     color: #fb7e14;
     border: 1px solid #dddddd;
-    background: #eeeeee;
+    background: #f2f2f2;
     margin-top: 2px;
     margin-bottom: 2px;
     padding-top: 3px;
